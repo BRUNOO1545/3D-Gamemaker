@@ -1,7 +1,8 @@
 /// @description functions and vars
 
-#macro CAMERA		obj_camera
-#macro SKY_COLOR	make_colour_rgb(23, 23, 23)
+// macros
+#macro CAMERA			obj_camera
+#macro CAMERA_SKY_COLOR	c_black	//make_colour_rgb(23, 23, 23)
 
 surf_prev = -1;
 surf_w = -1;
@@ -22,10 +23,6 @@ camera = {
 	roll: 0
 };
 
-//test
-camera.z = 100;
-camera.to_x = room_width;
-camera.to_z = room_height;
 
 #region vertext format setup
 
