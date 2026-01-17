@@ -19,7 +19,7 @@ skybox_thunder = {
 	],
 	effect: {
 		enable: false,
-		times: 9, // These are max thunder effects before the timer resets (based on mod 3)
+		times: 15, // These are max thunder effects before the timer resets (based on mod 3)
 		times_current: 0,
 		default_color: skybox_color
 	}

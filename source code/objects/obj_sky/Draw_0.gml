@@ -1,7 +1,7 @@
 /// @description draw texture
 
 // background color
-if !(skybox_thunder.enable) draw_rectangle_colour(x - (skybox_size / 2), y - (skybox_size / 2), x + (skybox_size / 2), y + (skybox_size / 2), skybox_color, skybox_color, skybox_color, skybox_color, false);
+if (skybox_thunder.enable) draw_rectangle_colour(x - (skybox_size / 2), y - (skybox_size / 2), x + (skybox_size / 2), y + (skybox_size / 2), skybox_color, skybox_color, skybox_color, skybox_color, false);
 
 shader_set(shader);
 	// set params
