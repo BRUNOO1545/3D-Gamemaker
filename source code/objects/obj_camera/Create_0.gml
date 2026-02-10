@@ -20,7 +20,10 @@ camera = {
 	to_z: 0,
 	fov: 90,
 	aspect_ratio: window_get_width() / window_get_height(),
-	roll: 0
+	roll: 0,
+    render_distance: 32000,
+    fog: false,
+    fog_color: c_white
 };
 
 
@@ -52,7 +55,7 @@ function draw_on_gui(_code = undefined) {
 }
 
 /// @description		Change the camera configuration with a struct.
-/// @param {Struct}		_new_config			Origin camera position of X coord.
+/// @param {Struct}		_new_config			New config struct.
 /// @return {Undefined}
 
 function set_config(_new_config) {
@@ -80,6 +83,7 @@ function set_origin(_x, _y, _z) {
 }
 
 /// @description		Get the current origin point of the camera.
+///                     Returns a new struct with XYZ properties.
 /// @return {Struct}
 
 function get_origin() {
@@ -107,6 +111,7 @@ function set_target(_x, _y, _z) {
 }
 
 /// @description		Get the current target point of the camera focus.
+///                     Returns a new struct with XYZ properties.
 /// @return {Struct}
 
 function get_target() {
@@ -173,4 +178,19 @@ function set_roll(_value) {
 
 function get_roll() {
 	return self.camera.roll;
+}
+
+/// @description		Change the camera render distance.
+/// @param {Real}		_value		New value (by default 32000).
+/// @return {Undefined}
+
+function set_render_distance(_value) {
+	self.camera.render_distance = _value;
+}
+
+/// @description		Get the current render distance.
+/// @return {Real}
+
+function get_render_distance() {
+	return self.camera.render_distance;
 }

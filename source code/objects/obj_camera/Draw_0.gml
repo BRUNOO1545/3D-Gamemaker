@@ -21,7 +21,7 @@ var _roll_matrix = matrix_build(
 );
 
 camera_set_view_mat(_camera, matrix_multiply(_view_matrix, _roll_matrix));
-camera_set_proj_mat(_camera, matrix_build_projection_perspective_fov(camera.fov, camera.aspect_ratio, 1, 32000));
+camera_set_proj_mat(_camera, matrix_build_projection_perspective_fov(camera.fov, camera.aspect_ratio, 1, camera.render_distance));
 camera_apply(_camera);
 
 // disable 3D render
