@@ -20,4 +20,5 @@ So here's the plan for the basics:
 - Create a procedural world generation algorithm
 
 Remember, we're pushing GameMaker's 2D-oriented architecture into 3D territory. That means working within limitations while applying optimization techniques to improve performance and maximize FPS. With that done, let's begin:
+
 ![demo](.readme/demo.gif)
