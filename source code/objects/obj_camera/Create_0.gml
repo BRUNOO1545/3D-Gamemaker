@@ -21,11 +21,8 @@ camera = {
 	fov: 90,
 	aspect_ratio: window_get_width() / window_get_height(),
 	roll: 0,
-    render_distance: 32000,
-    fog: false,
-    fog_color: c_white
+    render_distance: 32000
 };
-
 
 #region vertext format setup
 
