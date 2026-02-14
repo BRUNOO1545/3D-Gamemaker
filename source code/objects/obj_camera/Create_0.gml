@@ -9,7 +9,7 @@ surf_w = -1;
 surf_h = -1;
 
 blur_shader = shd_motion_blur;
-blur_amount = 1.0; // Float shader range 0.0 - 1.0
+blur_amount = 0.5; // Float shader range 0.0 - 1.0
 
 camera = {
 	x: 0,
@@ -41,7 +41,7 @@ camera = {
 // functions here
 
 /// @description						Execute a function or script on draw GUI event of the 3D camera.
-/// @param {Function, Asset.GMScript}	_code								Function or script for execution.
+/// @param {Function, Asset.GMScript}	_code			Function or script for execution.
 /// @return {Undefined}
 
 function draw_on_gui(_code = undefined) {
