@@ -37,6 +37,13 @@ camera = {
 	vertex_begin(vbuffer, vformat);
 
 #endregion
+/*
+gpu_set_tex_filter(true);
+gpu_set_tex_mip_enable(mip_on);
+gpu_set_tex_min_mip(0);
+gpu_set_tex_max_mip(4);
+gpu_set_tex_max_aniso(16);
+gpu_set_tex_mip_filter(tf_anisotropic);*/
 
 // functions here
 
